@@ -1,0 +1,71 @@
+#ppalContainer h2 {
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 2px 2px black;
+  text-align: center;
+}
+
+.btn {
+  background-color: gray;
+  border: green 2px solid;
+  font-weight: bold;
+  margin-top: 5px;
+  box-shadow: 10px 5px 5px black;
+}
+
+#header {
+  margin-bottom: 20px;
+}
+
+.btn-secondary {
+  font-weight: bold;
+  box-shadow: 10px 5px 5px black;
+}
+
+.btn-secondary:hover,
+.btn:hover {
+  background-color: yellowgreen;
+}
+
+#document {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(./../../../assets/images/campoFutbol.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+table {
+  background-color: white;
+  box-shadow: 0px 20px 50px black;
+  border: yellowgreen 10px solid;
+}
+
+.table-responsive {
+  height: 45vh;
+  overflow: scroll;
+  box-shadow: 10px 10px 10px black;
+}
+
+thead tr th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+  background: #246b21;
+  color: white;
+}
+
+td {
+    text-align: center;
+}
+
+form label {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}

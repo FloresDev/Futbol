@@ -1,0 +1,26 @@
+.container{
+    min-width: 100vw;
+    background: url(./../../../assets/images/fondoLogin.jpg) no-repeat center center;
+    background-size: cover;
+
+}
+
+.row {
+    min-height: 100vh;
+    align-items: center;
+}
+
+form {
+    background-color: yellowgreen;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+}
+
+label {
+    color: white;
+}
+
+.form-group, button {
+    margin-top: 20px;
+}

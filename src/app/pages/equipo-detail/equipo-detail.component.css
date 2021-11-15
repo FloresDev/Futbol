@@ -1,0 +1,28 @@
+.container {
+    height: 100vh;
+}
+
+#detailBox {
+    margin-top: 50px;
+}
+#detailBox h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 2px 2px 2px goldenrod;
+}
+
+#headerData {
+    margin-top: 50px;
+}
+
+.data  {
+    margin-top: 20px;
+}
+
+.data-binding {
+    color: goldenrod;
+}

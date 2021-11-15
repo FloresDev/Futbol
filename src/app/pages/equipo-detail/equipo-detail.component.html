@@ -1,0 +1,30 @@
+<div class="container" style="background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url({{srcImage}}) center center no-repeat;">
+    <div class="row">
+        <div id="detailBox" class="">
+            <h1>{{equipo.nombre}}</h1>
+        </div>
+    </div>
+    <div class="row data" id="headerData">
+        <h2 class="col-md-5">Títulos</h2>
+        <h2 class="col-md-2"> ---> </h2>
+        <h2 class="col-md-5 data-binding">{{equipo.titulos}}</h2>
+    </div>
+    <div class="row data">
+        <h2 class="col-md-5">Fecha de fundación</h2>
+        <h2 class="col-md-2"> ---> </h2>
+        <h2 class="col-md-5 data-binding">{{equipo.fechaDeFundacion}}</h2>
+    </div>
+    <div class="row data">
+        <h2 class="col-md-5">Liga</h2>
+        <h2 class="col-md-2"> ---> </h2>
+        <h2 class="col-md-5 data-binding">{{equipo.liga.nombre}}</h2>
+    </div>
+    <div class="row data">
+        <h2 class="col-md-5">País</h2>
+        <h2 class="col-md-2"> ---> </h2>
+        <h2 class="col-md-5 data-binding">{{equipo.liga.pais}}</h2>
+    </div>
+    <div>
+      
+    </div>
+</div>

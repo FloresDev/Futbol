@@ -1,0 +1,27 @@
+#back {
+    background-color: yellowgreen;
+     
+  }
+  
+  #formBox {
+      min-height: 100vh;
+  }
+    
+  #button {
+      text-align: center;
+  }
+  
+  button {
+      color: white;
+  }
+  
+  #return {
+      margin-left: 20px;
+  }
+  .error {
+      color: red;
+      font-weight: bold;
+  }
+
+
+  

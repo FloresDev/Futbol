@@ -1,0 +1,58 @@
+<div id="document">
+    <div id="ppalContainer">
+        <div class="row justify-content-center" id="header">
+            <button class="btn-secondary col-md-2" [routerLink]="['/addEquipos']">Agregar equipo</button>
+            <h2 class="col-md-6">Equipos de fútbol</h2>
+            <div class="col-md-2" *ngIf="!this.nameFound"></div>
+            <button class="btn-secondary col-md-2" (click)="getEquipos(this.nameFound)" *ngIf="this.nameFound">Volver</button>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <div class="row col-md-9 table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Títulos</th>
+                            <th scope="col">Liga</th>
+                            <th scope="col">Fecha de fundacion</th>
+                            <th scope="col"></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let equipo of this.equipos">
+                            <th scope="row">{{equipo.id}}</th>
+                            <td><a [routerLink]="" (click)="detailEquipo(equipo.id)" >{{equipo.nombre}}</a></td>
+                            <td>{{equipo.titulos}}</td>
+                            <td>{{equipo.liga.nombre}}</td>
+                            <td>{{equipo.fechaDeFundacion}}</td>
+                            <td>
+                                <button class="btn-danger" (click)="deleteEquipo(equipo.id, equipo.nombre)"> Eliminar </button>
+                            </td>
+                        
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center" style="margin-top: 20px;">
+            <form action="" class="row col-md-3">
+                <label for="">Introduce el nombre de un equipo o el de una liga</label>
+                <br>
+                <input type="text" name="nombre" [(ngModel)]="this.nombre">
+                <br>
+                <button type="button" class="btn btn-primary" (click)="findEquipoByName(this.nombre)">Buscar equipos por
+                    nombre</button>
+                <label for="">Fecha de fundación </label>
+                <br>
+                <input type="text" name="fechaDeFundacion" [(ngModel)]="this.fechaDeFundacion">
+                <br>
+                <button type="button" class="btn btn-primary"
+                    (click)="findEquipoByNameAndDate(this.nombre, this.fechaDeFundacion)">Buscar equipos por liga y
+                    fecha
+                    fundación</button>
+            </form>
+        </div>
+    </div>
+</div>
